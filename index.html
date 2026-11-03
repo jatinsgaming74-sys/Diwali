@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Diwali Wishes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <canvas id="fireworks"></canvas>
+
+    <div class="container">
+
+        <!-- Welcome Page -->
+        <div class="welcome-card" id="welcomeCard">
+
+            <div class="diya">🪔</div>
+
+            <p class="small-title">FESTIVAL OF LIGHTS</p>
+
+            <h1>
+                Welcome to <br>
+                <span>Diwali Celebration</span>
+            </h1>
+
+            <p class="description">
+                Celebrate this beautiful festival with happiness,
+                love, peace and prosperity.
+            </p>
+
+            <form id="wishForm">
+
+                <label for="username">Enter Your Name</label>
+
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Enter your name here..."
+                    maxlength="32"
+                    required
+                >
+
+                <button type="submit">
+                    Enter ✨
+                </button>
+
+            </form>
+
+            <p class="bottom-text">
+                ✨ Let the celebration begin! ✨
+            </p>
+
+        </div>
+
+
+        <!-- Diwali Wish Page -->
+        <div class="wish-card hidden" id="wishCard">
+
+            <p class="special-text">
+                A SPECIAL WISH FOR YOU
+            </p>
+
+            <h3 id="nameBefore"></h3>
+
+            <div class="big-diya">🪔</div>
+
+            <h1 class="happy">
+                Happy <br>
+                <span>Diwali!</span>
+            </h1>
+
+            <p class="blessing">
+
+                May this Diwali bring unlimited happiness
+                into your life.
+
+                May your home be filled with peace,
+                your heart with love, and your life
+                with success and prosperity.
+
+                May every diya light up a new hope
+                and every moment bring beautiful memories.
+
+            </p>
+
+            <div class="decoration">
+                ✨ 🪔 ✨ 🪔 ✨
+            </div>
+
+            <h2>Best Wishes to You & Your Family!</h2>
+
+            <p class="signature">
+                With lots of love and blessings,
+                <br>
+                <strong id="nameAfter"></strong>
+            </p>
+
+            <button id="againButton">
+                Create Another Wish ↻
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

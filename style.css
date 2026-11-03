@@ -1,0 +1,274 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at top, #70245e, #270f38 55%, #090817);
+
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+#fireworks {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
+}
+
+.welcome-card,
+.wish-card {
+    width: 100%;
+    max-width: 650px;
+
+    padding: 45px 35px;
+
+    text-align: center;
+
+    background: rgba(43, 17, 57, 0.90);
+
+    border: 2px solid #dcae4e;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 0 25px rgba(255, 190, 70, 0.25),
+        0 0 60px rgba(255, 120, 40, 0.15);
+
+    animation: appear 1s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+.diya {
+    font-size: 65px;
+    animation: glow 1.5s infinite alternate;
+}
+
+.small-title,
+.special-text {
+    color: #ffd66b;
+    letter-spacing: 4px;
+    font-size: 12px;
+    margin: 15px 0;
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 55px;
+    margin: 20px 0;
+}
+
+h1 span {
+    color: #ffd66b;
+    text-shadow: 0 0 20px #ff9d28;
+}
+
+.description {
+    color: #e7d8e9;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 450px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #ffd66b;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+
+    border: 1px solid #dcae4e;
+    border-radius: 10px;
+
+    background: #190d29;
+    color: white;
+
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #ffe08a;
+    box-shadow: 0 0 12px #ffbd4a;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+
+    margin-top: 18px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(
+        120deg,
+        #ffe08a,
+        #ff982e
+    );
+
+    color: #39162c;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px #ffb43f;
+}
+
+.bottom-text {
+    color: #e7c9e9;
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+.wish-card {
+    max-width: 750px;
+    padding: 35px;
+}
+
+#nameBefore {
+    font-family: 'Cormorant Garamond', serif;
+    color: #ffe2a0;
+    font-size: 35px;
+    margin: 10px;
+}
+
+.big-diya {
+    font-size: 65px;
+    animation: glow 1s infinite alternate;
+}
+
+.happy {
+    font-size: 75px;
+    line-height: 0.95;
+    color: white;
+    animation: shine 2s infinite alternate;
+}
+
+.blessing {
+    color: #f1dfef;
+    line-height: 2;
+    font-size: 15px;
+    margin: 25px auto;
+    max-width: 550px;
+}
+
+.decoration {
+    font-size: 25px;
+    margin: 20px;
+}
+
+.wish-card h2 {
+    color: #ffd66b;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+}
+
+.signature {
+    margin: 25px 0;
+    color: #e7d8e9;
+    line-height: 2;
+}
+
+.signature strong {
+    color: #ffd66b;
+    font-size: 25px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glow {
+    from {
+        filter: drop-shadow(0 0 5px orange);
+        transform: scale(1);
+    }
+
+    to {
+        filter: drop-shadow(0 0 25px gold);
+        transform: scale(1.12);
+    }
+}
+
+@keyframes shine {
+    from {
+        text-shadow: 0 0 10px orange;
+    }
+
+    to {
+        text-shadow: 0 0 35px gold;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .welcome-card,
+    .wish-card {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .happy {
+        font-size: 58px;
+    }
+
+    .blessing {
+        font-size: 13px;
+    }
+
+}
